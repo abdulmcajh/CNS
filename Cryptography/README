@@ -1,4 +1,17 @@
-Public key Cryptography
+Number Theory
+1.GCD                                  gcd.cpp
+2.Extended GCD                         exgcd.cpp
+3.Modular arithmatic                   mod.cpp
+4.Polynomial arithmatic                poly.cpp
+5.Chinese Remainder Theorem            crt.cpp
+
+Symmetric Key Cryptography
+1.DES                                   des.cpp
+2.AES                                   aes.cpp
+
+Public Key Cryptography
 1.RSA                                   rsa.cpp
 2.Diffe-Hellman Key exchange            DH-KE.cpp
 3.Elgamal                               elgamal.cpp    
+4.Elliptic Curve Cryptography           ECC.cpp
+    
