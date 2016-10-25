@@ -65,66 +65,7 @@ void mono_decrypt(char s[])
 			s[i]=rm[s[i]];
 	}
 }
-void pac(char s[],string &key)
-{
-	for(int i=0; s[i]!='\0'; i++)
-	{
-		int k = key[i]-'a';
-		int c = s[i]-'a';
-		s[i] = ((c+k)%26)+'a';
-	}
-}
-void pad(char s[],string &key)
-{
-	for(int i=0; s[i]!='\0'; i++)
-	{
-		int k = key[i]-'a';
-		int c = s[i]-'a';
-		s[i] = ((26+(c-k))%26)+'a';
-	}
-}
-void otpc(char s[],string key)
-{
-	for(int i=0;s[i]!='\0' ; i++)
-	{
-		int k,c;
-		if(key[i] >='a' && key[i] <= 'z')
-		k = key[i]-'a';
-		else
-		k = 26;
-		if(s[i] >='a' && s[i] <= 'z')
-		c = s[i]-'a';
-		else
-		c = 26;
-		c = ((c+k)%27);
-		if(c == 26)
-		s[i] = ' ';
-		else
-		s[i] = c+'a';
-	}
-}
-void otpd(char s[],string key)
-{
-	for(int i=0; s[i]!='\0'; i++)
-	{
-		int k,c;
-		if(key[i] >='a' && key[i] <= 'z')
-		k = key[i]-'a';
-		else
-		k = 26;
-		if(s[i] >='a' && s[i] <= 'z')
-		c = s[i]-'a';
-		else
-		c = 26;
-		cout<<c<<" "<<k<<" ";
-		c = ((27+(c-k))%27);
-		cout<<c<<"\n";
-		if(c == 26)
-		s[i] = ' ';
-		else
-		s[i] = c+'a';
-	}
-}
+
 int main()
 {
 
@@ -143,28 +84,6 @@ int main()
 	cout<<"MONO DECRYPT : "<<s<<endl;
 	//int K[3][3]={{17,17,5},{21,18,21},{2,2,19}};
 
-	
-	cout<<"enter key :";
-	string key;
-	getline(cin,key);
-	pac(s,key);
-	cout<<"poly alphabetic encryped : "<<pt<<"\n";
-	pad(s,key);
-	cout<<"poly alphabetic decryped : "<<ct<<"\n";
 
-	cout<<"enter plain text to be one time pad ciphered : ";
-	getline(cin,pt);
-	cout<<"enter key :";
-	getline(cin,key);
-	otpc(pt,key);
-	cout<<"one time pad encryped text is : "<<pt<<"\n";
-	cout<<"enter onetimepad ciphered text to be deciphered : ";
-	getline(cin,ct);
-	cout<<"enter key :";
-	getline(cin,key);
-	otpd(ct,key);
-	cout<<"plain text is : "<<ct<<"\n";
-	
-	
 	
 }
