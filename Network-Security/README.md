@@ -1,12 +1,12 @@
 **Socket Programs**
 
-*problem1:*
+*problem 1:*
 groups
 
-*problem2:*
+*problem 2:*
 leader
 
-*problem3:*
+*problem 3:*
 file-sharing
 
 **Others**
