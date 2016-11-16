@@ -17,8 +17,11 @@
 *client:*
 
 1. we can start a connection with other person by typing his port and group as : "serv_port | group"
-2. communicate with him
-3. End communication by entering "quit"
-4. Repeat
+2. client will be authenticated by server
+3. Public keys are exchanged
+4. Type in console to send message to him
+5. message is encrypted with his public key and sent to him
+6. End communication by entering "quit"
+7. Repeat
 
 
