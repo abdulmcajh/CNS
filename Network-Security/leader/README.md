@@ -15,7 +15,7 @@ leader B port :23458
 
 * python leader.py 23455 A
 
-**leader B:*
+**leader B:**
 
 * python leader.py 23455 B
 
