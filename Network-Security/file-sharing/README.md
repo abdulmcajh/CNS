@@ -1,20 +1,20 @@
-Execution:
+**Execution:**
 
-python server.py 50004
+* python server.py 50004
 
-python client.py 50004
+* python client.py 50004
 
-Explaination:
+**Explaination:**
 
-server accepts connections on 50004
+1. server accepts connections on 50004
 
-after a client connection .
+2. after a client connection .
 
-the client is authenticated by server and public keys are exchanged
+3. the client is authenticated by server and public keys are exchanged
 
-the server sends the parameters of encryption  of file using AES to client . encrypted by client public key
+4. the server sends the parameters of encryption  of file using AES to client . encrypted by client public key
 
-the server sends encrypted chunks of file ,"requested file should be in the directory"
+5. the server sends encrypted chunks of file ,"requested file should be in the directory"
 
-the client decrypts the chunks and writes into another file in the same directory with name kk'filename'
+6. the client decrypts the chunks and writes into another file in the same directory with name kk'filename'
 
