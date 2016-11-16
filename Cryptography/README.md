@@ -21,7 +21,7 @@
 1. **DES**  : des.cpp
 2. **AES**  : aes.cpp
 
-###Public Key Cryptography**
+###Public Key Cryptography
 
 1. **RSA** : rsa.cpp
 2. **Diffe-Hellman Key exchange** : DH-KE.cpp
