@@ -1,7 +1,7 @@
 **Execution**
 
-* python server.py 50004
-* python server.py 50005
+* python server.py 50004 0
+* python server.py 50005 0
 
 **Explanation**
 
