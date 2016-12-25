@@ -99,7 +99,7 @@ def receiver(l,G):
 						plain=msg_buf[0]
 						msg_buf=msg_buf[1:]
 						print "--received ",plain
-					    #G.mem[i].send(plain)
+					    	G.mem[i].send(plain)
 
 
 
